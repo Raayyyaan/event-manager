@@ -1,7 +1,5 @@
 # 🎉 Event Manager - Application de Gestion d'Événements
 
-Une application web moderne pour créer, découvrir et gérer des événements avec un système d'inscription et de gestion des participants.
-
 ![React](https://img.shields.io/badge/React-18.x-61DAFB?style=flat&logo=react)
 ![TypeScript](https://img.shields.io/badge/TypeScript-5.x-3178C6?style=flat&logo=typescript)
 ![Node.js](https://img.shields.io/badge/Node.js-18.x-339933?style=flat&logo=node.js)
@@ -181,9 +179,7 @@ export default defineConfig({
 
 ```bash
 cd backend
-npm start
-# ou en mode développement :
-npm run dev
+node ./server.js
 ```
 
 Le serveur backend démarre sur `http://localhost:5000`
@@ -283,61 +279,10 @@ Le thème est géré dans `frontend/src/styles/themes.css`. Vous pouvez personna
 
 **Frontend** : Dans `vite.config.ts`, changez `port: 5173`
 
-## 🐛 Résolution de Problèmes
-
-### Les images ne s'affichent pas
-
-1. Vérifiez que le dossier `backend/uploads/` existe
-2. Vérifiez que `vite.config.ts` contient le proxy `/uploads`
-3. Redémarrez frontend et backend
-
-### Erreur de connexion à la base de données
-
-1. Vérifiez que PostgreSQL est démarré
-2. Vérifiez les credentials dans `.env`
-3. Vérifiez que la base `event_manager` existe
-
-### Le thème ne change pas
-
-1. Videz le cache du navigateur (Ctrl + Shift + R)
-2. Vérifiez que `themes.css` est importé en premier dans `index.css`
-
-## 📝 Scripts Disponibles
-
-### Backend
-
-```bash
-npm start          # Démarre le serveur
-npm run dev        # Démarre en mode développement avec nodemon
 ```
-
-### Frontend
-
-```bash
-npm run dev        # Démarre le serveur de développement
-npm run build      # Build pour la production
-npm run preview    # Prévisualise le build de production
-```
-
-## 🤝 Contribution
-
-Les contributions sont les bienvenues ! N'hésitez pas à ouvrir une issue ou une pull request.
-
-## 📄 Licence
-
-Ce projet est sous licence MIT.
 
 ## 👨‍💻 Auteur
 
-**Votre Nom**
-- GitHub: [@votre-username](https://github.com/votre-username)
-
-## 🙏 Remerciements
-
-- React et l'équipe Vite pour les outils incroyables
-- Lucide pour les icônes
-- La communauté open source
-
----
+**Rayan**
 
 **Fait avec ❤️ et React**
