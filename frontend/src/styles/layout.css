@@ -1,0 +1,26 @@
+/* ==========================================
+   LAYOUT CONTAINERS
+   ========================================== */
+.full-page-container {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 2rem 1rem;
+}
+
+.card {
+  background: var(--bg-card);
+  border-radius: var(--radius);
+  padding: 2.5rem;
+  max-width: 500px;
+  width: 100%;
+  margin: 5rem auto;
+  box-shadow: var(--shadow-lg);
+  border: 1px solid var(--border);
+}
+
+.event-list {
+  width: 100%;
+  max-width: 1200px;
+}

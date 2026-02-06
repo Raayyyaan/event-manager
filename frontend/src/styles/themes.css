@@ -1,0 +1,101 @@
+:root,
+[data-theme="dark"] {
+    --primary: #10b981;
+    --primary-hover: #059669;
+    --secondary: #6366f1;
+    --secondary-hover: #4f46e5;
+    --danger: #ef4444;
+    --danger-hover: #dc2626;
+
+    --bg-dark: #0f172a;
+    --bg-card: #1e293b;
+    --bg-hover: #334155;
+    --bg-body: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);
+
+    --text-primary: #f1f5f9;
+    --text-secondary: #94a3b8;
+    --border: #334155;
+
+    --radius: 12px;
+    --shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.3), 0 2px 4px -1px rgba(0, 0, 0, 0.2);
+    --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.4), 0 4px 6px -2px rgba(0, 0, 0, 0.3);
+}
+
+[data-theme="light"] {
+    --primary: #059669;
+    --primary-hover: #047857;
+    --secondary: #4f46e5;
+    --secondary-hover: #4338ca;
+    --danger: #dc2626;
+    --danger-hover: #b91c1c;
+
+    --bg-dark: #f8fafc;
+    --bg-card: #ffffff;
+    --bg-hover: #f1f5f9;
+    --bg-body: linear-gradient(135deg, #f0f9ff 0%, #e0f2fe 100%);
+
+    --text-primary: #0f172a;
+    --text-secondary: #475569;
+    --border: #e2e8f0;
+
+    --shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+    --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+}
+
+body {
+    background: var(--bg-body);
+    color: var(--text-primary);
+    transition: background 0.3s ease, color 0.3s ease;
+}
+
+.theme-toggle {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    cursor: pointer;
+    user-select: none;
+}
+
+.theme-toggle-switch {
+    position: relative;
+    width: 50px;
+    height: 26px;
+    background: var(--bg-hover);
+    border-radius: 50px;
+    border: 2px solid var(--border);
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.theme-toggle-switch:hover {
+    background: var(--bg-dark);
+}
+
+.theme-toggle-slider {
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    width: 18px;
+    height: 18px;
+    background: var(--text-primary);
+    border-radius: 50%;
+    transition: transform 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 10px;
+}
+
+[data-theme="light"] .theme-toggle-slider {
+    transform: translateX(24px);
+}
+
+* {
+    transition: background-color 0.3s ease, border-color 0.3s ease, color 0.3s ease;
+}
+
+img,
+video,
+iframe {
+    transition: none !important;
+}

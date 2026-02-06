@@ -1,0 +1,140 @@
+/* ==========================================
+   BUTTONS
+   ========================================== */
+button {
+  font-family: inherit;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  border: none;
+  border-radius: 8px;
+  font-weight: 500;
+}
+
+.btn-primary {
+  background: var(--primary);
+  color: white;
+  padding: 0.75rem 1.5rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  justify-content: center;
+  transition: all 0.2s ease;
+}
+
+.btn-primary:hover {
+  background: var(--primary-hover);
+  transform: translateY(-1px);
+  box-shadow: var(--shadow);
+}
+
+.btn-primary:active {
+  transform: translateY(0);
+}
+
+.create-event-btn {
+  background: var(--primary);
+  color: white;
+  padding: 0.75rem 1.5rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  justify-content: center;
+  font-weight: 600;
+  transition: all 0.2s ease;
+}
+
+.create-event-btn:hover:not(:disabled) {
+  background: var(--primary-hover);
+  transform: translateY(-1px);
+  box-shadow: var(--shadow);
+}
+
+.create-event-btn:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.cancel-btn {
+  background: #475569;
+  color: white;
+  padding: 0.75rem 1.5rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  justify-content: center;
+  font-weight: 600;
+}
+
+.cancel-btn:hover {
+  background: #334155;
+}
+
+.btn-logout {
+  background: var(--danger);
+  color: white;
+  padding: 0.625rem 1.25rem;
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+
+.btn-logout:hover {
+  background: var(--danger-hover);
+  transform: translateY(-1px);
+  box-shadow: var(--shadow);
+}
+
+.btn-logout-small {
+  background: var(--danger);
+  color: white;
+  padding: 0.5rem 1rem;
+  font-size: 0.875rem;
+  font-weight: 500;
+}
+
+.btn-logout-small:hover {
+  background: var(--danger-hover);
+}
+
+.btn-logout-icon {
+  background: transparent;
+  color: var(--danger);
+  padding: 0.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 6px;
+  transition: all 0.2s ease;
+}
+
+.btn-logout-icon:hover {
+  background: rgba(239, 68, 68, 0.1);
+  color: var(--danger-hover);
+}
+
+.edit-btn {
+  background: transparent;
+  padding: 0.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 6px;
+  transition: all 0.2s ease;
+}
+
+.edit-btn:hover {
+  background: var(--bg-hover);
+}
+
+.link-btn {
+  background: transparent;
+  color: var(--primary);
+  padding: 0.25rem 0.5rem;
+  font-weight: 500;
+  text-decoration: underline;
+  margin-left: 0.5rem;
+}
+
+.link-btn:hover {
+  color: var(--primary-hover);
+}
